@@ -21,6 +21,11 @@ nav ul li{
     list-style-type: none;
 }
 
+nav ul li img{
+    border-radius: 50%;
+    padding: 3px;
+}
+
 nav ul li a{
     text-decoration: none;
     color: white;
@@ -41,7 +46,7 @@ nav ul li a:hover{
 
 nav ul li i:hover{
     border-radius: 25px;
-    background: #404242;
+    background: #1e1f1f;
 }
 
 main {
@@ -175,6 +180,329 @@ hr{
     background: #0f1113;
 }
 
+.mobile-foots{
+    display: none;
+}
+
 .foot a:hover{
     text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+nav ul{
+    display: flex;
+    padding-right: 5px;
+    align-items: center;
+    justify-content: right;
+}
+
+nav ul li{
+    padding: 4px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+nav ul li i{
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav ul li i:hover{
+    border-radius: 20px;
+    background: #404242;
+}
+
+#did{
+    display: none;
+ }
+
+ nav ul li img{
+    width: 26px;
+    height: 24.5px;
+    padding-top: 5px;
+}
+
+main{
+    height: 72.3vh;
+}
+
+    .maining {
+        width: 70%;
+        gap: 12px;
+        padding: 2px 8px;
+        margin-bottom: 5px;
+        border-radius: 30px;
+    }
+    
+    .maining i, .maining input, .maining a, .maining button {
+        font-size: 14px;
+}
+
+    main h1{
+        font-size: 50PX;
+        font-weight: 450;
+        margin-bottom: 7px;
+}
+
+    .maining input {
+        width: 66%;
+}
+
+    .btn {
+        gap: 30px;
+    }
+
+    .btn button{
+        font-size: 11px;
+    }
+
+    .btn button:hover{
+        border: 1px solid #cccaca;
+    }
+
+    main h5{
+        color: #797676;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 8px;
+    }
+
+footer p{
+    padding: 10px 20px;
+    font-size: 11px;
+    background: #0f1113;
+
+}
+
+.footers{
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.footee{
+    width: 100%;
+}
+
+.foots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 5px 20px;
+    background: #0f1113;
+}
+
+hr{
+    width: 100%;
+    height: 1px;
+    background: #404242;
+    border: none;
+    margin: 0 auto;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #0f1113;
+
+}
+
+.foot a{
+    text-decoration: none;
+    color: #f8f4f4;
+    font-size: 10px;
+    background: #0f1113;
+}
+
+.mobile-foots{
+    display: none;
+}
+
+}
+
+@media (max-width: 480px) {
+    nav ul{
+        display: flex;
+        padding-right: 5px;
+        align-items: center;
+        justify-content: right;
+    }
+    
+    nav ul li{
+        padding: 1px;
+        list-style-type: none;
+    }
+    
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-family: 'poppins', sans-serif;
+        font-weight: 500;
+        font-size: 5px;
+    }
+    
+    nav ul li i{
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    nav ul li a:hover{
+        text-decoration: underline;
+    }
+    
+    nav ul li i:hover{
+        border-radius: 20px;
+        background: #404242;
+    }
+    
+    #did{
+        display: none;
+     }
+    
+     nav ul li img{
+        width: 16px;
+        height: 16px;
+        padding-top: 5px;
+    }
+    
+    main{
+        height: 72.6vh;
+    }
+    
+        .maining {
+            width: 100%;
+            gap: 5px;
+            font-size: 12px;
+            margin-bottom: 5px;
+            border-radius: 30px;
+        }
+        
+        .maining i, .maining input, .maining a, .maining button {
+            font-size: 11px;
+            padding: 2px;
+    }
+    
+        main h1{
+            font-size: 40PX;
+            font-weight: 450;
+            margin-bottom: 7px;
+    }
+    
+        .maining input {
+            width: 57%;
+    }
+    
+        .btn {
+            gap: 20px;
+        }
+    
+        .btn button{
+            font-size: 8px;
+        }
+    
+        .btn button:hover{
+            border: 1px solid #cccaca;
+        }
+    
+        main h5{
+            color: #797676;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 6px;
+        }
+    
+    footer p{
+        padding: 10px 20px;
+        font-size: 8px;
+    }
+    
+    hr{
+        width: 100%;
+        height: 1px;
+        background: #404242;
+        border: none;
+        margin: 0 auto;
+    }
+
+    
+    .mobile-foots{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10px 15px 10px;
+        background: #0f1113;
+    }
+
+    
+    footer .mobile-foot{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: inherit;
+    }
+    
+    footer .mobile{
+        width: 100%;
+        display: flex;
+        background: inherit;
+        gap: 15px;
+    }
+    
+    .mobile-footee{
+        display: flex;
+        padding: 7px;
+        justify-content: center;
+        align-items: center;
+        background: #0f1113;
+    }
+
+    .mobile-footee a{
+        text-decoration: none;
+        color: #f8f4f4;
+        font-size: 2px;
+        padding: 5px;
+        background: #0f1113;
+ 
+    }
+
+    .mobile-foo{
+        width: 25%;
+    }
+
+    .mobile-fool{
+        width: 100%;
+        padding-left: 3px;
+        padding-right: 3px;
+        margin: 0;
+    }
+
+    .mobile-foot a{
+        text-decoration: none;
+        color: #f8f4f4;
+        font-size: 2px;
+        background: #0f1113;
+    }
+
+    .foots{
+        display: none;
+    }
 }
