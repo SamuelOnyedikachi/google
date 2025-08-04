@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
 nav{
     background: inherit;
 }
@@ -54,7 +60,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75.49vh;
+    height: 74.7vh;
     width: 70%;
     padding: 20px;
     margin: 0 auto;
@@ -74,14 +80,14 @@ main h1 {
 .maining {
     display: flex;
     flex-direction: row;
-    padding:12px 15px;
-    width: 50%;
+    padding:10px 15px;
+    width: 55%;
     margin-bottom: 20px;
     border-radius: 50px;
     background: #404242;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 22px;
     flex-wrap: wrap;
     outline: none;
     color: rgb(139, 137, 137);
@@ -236,7 +242,7 @@ nav ul li i:hover{
 }
 
 main{
-    height: 72.3vh;
+    height: 68vh;
 }
 
     .maining {
@@ -283,59 +289,85 @@ main{
 
 footer p{
     padding: 10px 20px;
-    font-size: 11px;
+    font-size: 13px;
     background: #0f1113;
 
-}
-
-.footers{
-    padding-bottom: 50px;
-    width: 100%;
-}
-
-.footee{
-    width: 100%;
 }
 
 .foots{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px 5px 20px;
-    background: #0f1113;
-}
-
-hr{
-    width: 100%;
-    height: 1px;
-    background: #404242;
-    border: none;
-    margin: 0 auto;
-}
-
-.foot{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    background: #0f1113;
-
-}
-
-.foot a{
-    text-decoration: none;
-    color: #f8f4f4;
-    font-size: 10px;
-    background: #0f1113;
-}
-
-.mobile-foots{
     display: none;
 }
 
+.mobile-foots{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 10px 10px;
+    background: #0f1113;
 }
 
-@media (max-width: 480px) {
+
+footer .mobile-foot{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: inherit;
+}
+
+footer .mobile-foot a{
+    font-size: 11px;
+}
+
+footer .mobile{
+    width: 100%;
+    display: flex;
+    background: inherit;
+    gap: 20px;
+}
+
+.mobile-footee{
+    display: flex;
+    padding: 7px;
+    justify-content: start;
+    align-items: center;
+    background: #0f1113;
+}
+
+.mobile-footee a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: #f8f4f4;
+    font-size: 11px;
+    padding: 8px;
+    background: #0f1113;
+
+}
+
+.mobile-foo{
+    width: 40%;
+    justify-content: center;
+}
+
+.mobile-fool{
+    width: 80%;
+    padding-right: 3px;
+    margin: 0;
+}
+
+.mobile-foot a{
+    text-decoration: none;
+    color: #f8f4f4;
+    background: #0f1113;
+}
+
+.foots{
+    display: none;
+}
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
     nav ul{
         display: flex;
         padding-right: 5px;
@@ -382,7 +414,7 @@ hr{
     }
     
     main{
-        height: 72.6vh;
+        height: 71.7vh;
     }
     
         .maining {
@@ -405,7 +437,7 @@ hr{
     }
     
         .maining input {
-            width: 57%;
+            width: 58%;
     }
     
         .btn {
@@ -447,10 +479,13 @@ hr{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 5px 10px 15px 10px;
+        padding: 5px 10px 10px 10px;
         background: #0f1113;
     }
 
+    footer{ 
+        margin-bottom: 0;
+    }
     
     footer .mobile-foot{
         width: 100%;
@@ -459,18 +494,23 @@ hr{
         text-align: center;
         background: inherit;
     }
+
+   footer .mobile-foot a{
+        font-size: 8px;
+    }
     
     footer .mobile{
         width: 100%;
         display: flex;
+        padding-top: 8px;
         background: inherit;
-        gap: 15px;
+        gap: 0;
     }
     
     .mobile-footee{
         display: flex;
-        padding: 7px;
-        justify-content: center;
+        padding: 0;
+        justify-content: start;
         align-items: center;
         background: #0f1113;
     }
@@ -478,27 +518,29 @@ hr{
     .mobile-footee a{
         text-decoration: none;
         color: #f8f4f4;
-        font-size: 2px;
-        padding: 5px;
+        font-size: 8px;
+        width: 100%;
+        padding: 0px;
         background: #0f1113;
  
     }
 
     .mobile-foo{
-        width: 25%;
+        width: 30%;
     }
 
     .mobile-fool{
-        width: 100%;
-        padding-left: 3px;
-        padding-right: 3px;
-        margin: 0;
+        width: 60%;    
+    }
+
+    footer .mobile-fool{
+        margin-left: 0;
+        padding: 0;
     }
 
     .mobile-foot a{
         text-decoration: none;
         color: #f8f4f4;
-        font-size: 2px;
         background: #0f1113;
     }
 
