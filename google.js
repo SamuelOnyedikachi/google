@@ -37,3 +37,33 @@ document.getElementById("searchForm").addEventListener("submit", (event) => {
         window.location.href = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
     }
 });
+
+
+// Restore cursor when returning
+window.addEventListener('pageshow', (event) => {
+    const searchInput = document.getElementById("searchQuery");
+    
+    // Only restore if we're returning from a navigation
+    if (event.persisted || performance.navigation.type === 2) {
+        const storedData = localStorage.getItem('lastSearchData');
+        if (storedData) {
+            const { query, time } = JSON.parse(storedData);
+            
+            // Only restore if data is recent (within 5 minutes)
+            if (Date.now() - time < 300000) {
+                searchInput.value = query;
+            }
+        }
+    }
+    
+    // Always focus the input
+    searchInput.focus();
+    searchInput.select();
+});
+
+// Clear old data on fresh page load
+window.addEventListener('load', () => {
+    if (!performance.navigation.type === 2) {
+        localStorage.removeItem('lastSearchData');
+    }
+});
