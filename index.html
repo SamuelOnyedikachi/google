@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <!-- google fonts -->
@@ -13,6 +14,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./google.css">
+    <link rel="icon" href="./googlevelion.png">
 </head>
 <body>
         <nav class="heading">
@@ -27,12 +29,14 @@
         </nav>
     <main>
             <h1>Google</h1>
-            <div class="maining">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-               | <input type="" name="" value="" placeholder="">
+            <form class="maining" id="searchForm">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+               | <input type="text" name="q" id="searchQuery" value="" placeholder="Search..." required>
                 <a href="" ><i class="fa-solid fa-microphone"></i></a>
                 <a href=""><i class="fa-solid fa-camera-rotate"></i></a>
-            </div>
+            </form>
             <div class="btn">
                 <button>Google Search</button>
                 <button>I'm Feeling Lucky</button>
@@ -90,5 +94,6 @@
             </div>
         </div>
     </footer>
+    <script src="./google.js"></script>
 </body>
 </html>
